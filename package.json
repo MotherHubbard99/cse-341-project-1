@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/MotherHubbard99/cse-341-project-1#readme",
   "dependencies": {
+    "body-parser": "^2.2.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongobd": "^0.0.1-security.0",
-    "mongodb": "^7.0.0"
+    "mongodb": "^7.0.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
   }
 }
