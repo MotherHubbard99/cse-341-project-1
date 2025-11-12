@@ -5,7 +5,7 @@
     "description": "Users Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3001",
+  "host": "https://cse-341-project-1-t6lv.onrender.com/",
   "basePath": "/",
   "schemes": [
     "http",
