@@ -6,7 +6,7 @@ const usersController = require('../controllers/users');
 //create routes for endpoints
 router.get('/', usersController.getAll);
 
-router.get('id', usersController.getSingle);
+router.get('/:id', usersController.getSingle);
 
 router.post('/', usersController.createUser);
 
