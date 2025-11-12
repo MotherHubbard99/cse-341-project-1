@@ -39,17 +39,22 @@ const createUser = async (req, res) => {
 const updateUser = async (req, res) => {
     //#swagger.tags=['Users']
     const userId = new ObjectId(req.params.id);
+    if (!req.body.email || !req.body.username || !req.body.name) {
+        return res.status(400).json({ message: 'One or more of the required fields are missing.' })
+    }
+    
     const user = {
         email: req.body.email,
         username: req.body.username,
         name: req.body.name,
         ipaddress: req.body.ipaddress
-    };
+        };
+    
     const response = await mongodb.getDatabase().collection('users').replaceOne({ _id: userId }, user);
-    if (response.acknowledged > 0) {
+    if (response.modifiedCount > 0) {
         res.status(204).send();
     } else {
-        res.status(500).json(response.error || 'Some error occured while updating the user.');
+        res.status(404).json(response.error || 'User has not been found OR no changes have been made.');
     }
 };
 
