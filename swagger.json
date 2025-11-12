@@ -96,8 +96,8 @@
         "description": "",
         "parameters": [
           {
-            "name": "id",
-            "in": "path",
+            "name": "body",
+            "in": "body",
             "required": true,
             "type": "string"
           }
