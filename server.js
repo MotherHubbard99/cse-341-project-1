@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 app.use('/', require('./routes'));
 //multiple sites for swagger for testing for headers
 app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*')
     res.setHeader(
         'Access-Control-Allow-Headers',
         'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
