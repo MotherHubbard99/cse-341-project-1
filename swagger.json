@@ -96,11 +96,20 @@
         "description": "",
         "parameters": [
           {
-            "name": "body",
-            "in": "body",
-            "required": true,
-            "type": "string"
-          }
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "type": "string"
+      },
+      {
+        "name": "body",
+        "in": "body",
+        "required": true,
+        "schema": {
+          "$ref": "#/definitions/User"
+        }
+      }
+
         ],
         "responses": {
           "204": {
