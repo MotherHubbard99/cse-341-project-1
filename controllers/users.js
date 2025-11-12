@@ -47,9 +47,11 @@ const updateUser = async (req, res) => {
         email: req.body.email,
         username: req.body.username,
         name: req.body.name,
-        ipaddress: req.body.ipaddress
+        ipaddress: req.body.ipaddress,
+        birthdate: req.body.birthdate,
+        favorite_color: req.body.favorite_color
         };
-    
+    z
     const response = await mongodb.getDatabase().collection('users').replaceOne({ _id: userId }, user);
     if (response.modifiedCount > 0) {
         res.status(204).send();
