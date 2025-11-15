@@ -25,7 +25,8 @@ const createUser = async (req, res) => {
     const user = {
         email: req.body.email,
         username: req.body.username,
-        name: req.body.name,
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
         ipaddress: req.body.ipaddress,
     };
     const response = await mongodb.getDatabase().collection('users').insertOne({ _id: userId }, user);
@@ -44,9 +45,10 @@ const updateUser = async (req, res) => {
     }
     
     const user = {
-        email: req.body.email,
+        email: req.body.email, 
         username: req.body.username,
-        name: req.body.name,
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
         ipaddress: req.body.ipaddress,
         birthdate: req.body.birthdate,
         favorite_color: req.body.favorite_color
