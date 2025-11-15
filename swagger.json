@@ -76,6 +76,12 @@
                 },
                 "ipaddress": {
                   "example": "any"
+                },
+                "birthdate": {
+                  "example": "any"
+                },
+                "favorite_color": {
+                  "example": "any"
                 }
               }
             }
