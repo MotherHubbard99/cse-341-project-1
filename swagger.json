@@ -54,7 +54,7 @@
         "tags": [
           "Users"
         ],
-        "description": "",
+        "description": "Create",
         "parameters": [
           {
             "name": "body",
