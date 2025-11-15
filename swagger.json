@@ -62,16 +62,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "email": {
+                   "email": {
                   "example": "any"
                 },
                 "username": {
-                  "example": "any"
-                },
-                "firstname": {
-                  "example": "any"
-                },
-                "lastname": {
                   "example": "any"
                 },
                 "ipaddress": {
@@ -81,6 +75,12 @@
                   "example": "any"
                 },
                 "favorite_color": {
+                  "example": "any"
+                },
+                 "firstname": {
+                  "example": "any"
+                },
+                "lastname": {
                   "example": "any"
                 }
               }
@@ -144,12 +144,6 @@
                 "username": {
                   "example": "any"
                 },
-                "firstname": {
-                  "example": "any"
-                },
-                "lastname": {
-                  "example": "any"
-                },
                 "ipaddress": {
                   "example": "any"
                 },
@@ -157,6 +151,12 @@
                   "example": "any"
                 },
                 "favorite_color": {
+                  "example": "any"
+                },
+                 "firstname": {
+                  "example": "any"
+                },
+                "lastname": {
                   "example": "any"
                 }
               }
