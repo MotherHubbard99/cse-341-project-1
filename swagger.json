@@ -68,7 +68,10 @@
                 "username": {
                   "example": "any"
                 },
-                "name": {
+                "firstname": {
+                  "example": "any"
+                },
+                "lastname": {
                   "example": "any"
                 },
                 "ipaddress": {
@@ -135,7 +138,10 @@
                 "username": {
                   "example": "any"
                 },
-                "name": {
+                "firstname": {
+                  "example": "any"
+                },
+                "lastname": {
                   "example": "any"
                 },
                 "ipaddress": {
