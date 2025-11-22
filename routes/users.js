@@ -3,7 +3,7 @@ const router = express.Router();
 
 const usersController = require('../controllers/users');
 //middleware route
-const validation = require('..middleware/validate')
+const validation = require('../middleware/validate');
 
 //create routes for endpoints
 router.get('/', usersController.getAll);
